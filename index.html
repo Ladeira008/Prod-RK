@@ -220,12 +220,12 @@ tr:hover td { background: #FFFDE7; }
   <div class="site-badge">BRRJ02</div>
   <div>
     <div class="page-title">Ranking de Produtividade</div>
-    <div class="page-subtitle">Picking &nbsp;·&nbsp; Setor RK &nbsp;·&nbsp; 07/05/2026 · 06h–14h &nbsp;·&nbsp; meta 66 un/h</div>
+    <div class="page-subtitle">Picking &nbsp;·&nbsp; Setor RK &nbsp;·&nbsp; 07/05/2026 · 06h–14h &nbsp;·&nbsp; meta 64 un/h</div>
   </div>
 </div>
 
 <div class="sector-tabs">
-  <button class="sector-btn active" onclick="setSector(this,'RK')">Setor RK <span class="meta-tag">meta 66 un/h</span></button>
+  <button class="sector-btn active" onclick="setSector(this,'RK')">Setor RK <span class="meta-tag">meta 64 un/h</span></button>
 </div>
 
 <div class="summary-row" id="summary-row"></div>
@@ -261,35 +261,35 @@ tr:hover td { background: #FFFDE7; }
 <div class="mobile-list" id="mobile-list"></div>
 
 <script>
-const META_RK = 66;
+const META_RK = 64;
 
 const raw = [
-  {id:2027462, nome:"Anthony Aleixo Viegas Da Rocha", prod_liq:73, util:53.84, unidades:218},
-  {id:2027343, nome:"Cleide Dias Da Silva", prod_liq:67, util:52.96, unidades:191},
-  {id:2194272, nome:"Davi Galvao Marques", prod_liq:0, util:0.0, unidades:0},
-  {id:2210943, nome:"Julia Da Silva Ribeiro", prod_liq:61, util:59.54, unidades:184},
+  {id:2027462, nome:"Anthony Aleixo Viegas Da Rocha", prod_liq:72, util:53.13, unidades:218},
+  {id:2027343, nome:"Cleide Dias Da Silva", prod_liq:70, util:56.35, unidades:484},
+  {id:2194272, nome:"Davi Galvao Marques", prod_liq:63, util:58.52, unidades:197},
+  {id:2210943, nome:"Julia Da Silva Ribeiro", prod_liq:80, util:68.51, unidades:566},
   {id:548992, nome:"Cesar De Farias Firmino", prod_liq:0, util:0.0, unidades:0},
   {id:2027348, nome:"Cristiano Gaiao Breda", prod_liq:0, util:0.0, unidades:0},
   {id:2241968, nome:"Edilson Da Silva Santos", prod_liq:0, util:0.0, unidades:0},
   {id:2148524, nome:"Fabricio Barradas Santos", prod_liq:0, util:0.0, unidades:0},
-  {id:1921712, nome:"Gabriel Pinto Goncalves", prod_liq:101, util:69.23, unidades:299},
-  {id:2027474, nome:"Germano Aziz De Moura Junior", prod_liq:75, util:58.32, unidades:242},
-  {id:2027315, nome:"Guilherme Mateus Lisboa Soares", prod_liq:98, util:70.56, unidades:316},
-  {id:2139922, nome:"Jenifer Teles Da Silva", prod_liq:93, util:65.71, unidades:298},
-  {id:2126576, nome:"Daniel Borges Da Silva", prod_liq:61, util:56.77, unidades:166},
-  {id:1805739, nome:"Marcos Vinicios Saldanha Da Silva", prod_liq:85, util:69.44, unidades:272},
+  {id:1921712, nome:"Gabriel Pinto Goncalves", prod_liq:89, util:66.93, unidades:614},
+  {id:2027474, nome:"Germano Aziz De Moura Junior", prod_liq:72, util:62.52, unidades:483},
+  {id:2027315, nome:"Guilherme Mateus Lisboa Soares", prod_liq:100, util:74.71, unidades:670},
+  {id:2139922, nome:"Jenifer Teles Da Silva", prod_liq:78, util:59.41, unidades:546},
+  {id:2126576, nome:"Daniel Borges Da Silva", prod_liq:51, util:53.53, unidades:344},
+  {id:1805739, nome:"Marcos Vinicios Saldanha Da Silva", prod_liq:81, util:67.51, unidades:326},
   {id:2242089, nome:"Maria Eduarda Santos Da Silva Da Conceicao", prod_liq:0, util:0.0, unidades:0},
   {id:1921713, nome:"Matheus Clemente De Sena", prod_liq:0, util:0.0, unidades:0},
-  {id:2126588, nome:"Nathalia Do Rosario Bastos Oliveira", prod_liq:60, util:46.15, unidades:174},
-  {id:2140780, nome:"Isaque Ribeiro Pereira Braga", prod_liq:31, util:25.04, unidades:15},
+  {id:2126588, nome:"Nathalia Do Rosario Bastos Oliveira", prod_liq:61, util:53.53, unidades:358},
+  {id:2140780, nome:"Isaque Ribeiro Pereira Braga", prod_liq:60, util:57.24, unidades:187},
   {id:2111214, nome:"Maxwell Duarte Soares", prod_liq:0, util:0.0, unidades:0},
   {id:2111210, nome:"Kamilly Vitoria De Oliveira Pereira", prod_liq:0, util:0.0, unidades:0},
-  {id:2140781, nome:"Juliana Barreiros Dos Santos Salomao", prod_liq:85, util:57.2, unidades:247},
-  {id:2140788, nome:"Maria Eloiza Da Silva Santos", prod_liq:23, util:16.64, unidades:17},
+  {id:2140781, nome:"Juliana Barreiros Dos Santos Salomao", prod_liq:65, util:53.69, unidades:431},
+  {id:2140788, nome:"Maria Eloiza Da Silva Santos", prod_liq:77, util:50.55, unidades:242},
   {id:2027417, nome:"Viviane Leal Liberato Da Silva", prod_liq:0, util:0.0, unidades:0},
   {id:2027311, nome:"Andressa Gomes Da Silva", prod_liq:0, util:0.0, unidades:0},
   {id:2027341, nome:"Kamille Almeida De Freitas", prod_liq:0, util:0.0, unidades:0},
-  {id:2140772, nome:"Clara Xavier Viana", prod_liq:59, util:56.13, unidades:166},
+  {id:2140772, nome:"Clara Xavier Viana", prod_liq:67, util:60.01, unidades:445},
 ];
 
 function getCategory(d) {
