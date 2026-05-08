@@ -353,9 +353,9 @@ function buildSummary(){
   document.getElementById('summary-row').innerHTML=`
     <div class="card"><div class="card-label">Total</div><div class="card-val c-default">${total}</div><div class="card-sub">colaboradores</div></div>
     <div class="card"><div class="card-label">Com Produção</div><div class="card-val c-default">${comProd}</div><div class="card-sub">ativos no turno</div></div>
-    <div class="card border-green"><div class="card-label">Acima da Meta</div><div class="card-val c-green">${nMeta}</div><div class="card-sub">prod ≥ ${meta} &nbsp;·&nbsp; <strong>${pctMeta}%</strong></div></div>
-    <div class="card border-amber"><div class="card-label">Atenção</div><div class="card-val c-amber">${nAttn}</div><div class="card-sub">prod ${attnMin}–${meta-1} &nbsp;·&nbsp; <strong>${pctAttn}%</strong></div></div>
-    <div class="card border-red"><div class="card-label">Abaixo</div><div class="card-val c-red">${nBelow}</div><div class="card-sub">prod &lt; ${attnMin} &nbsp;·&nbsp; <strong>${pctBelow}%</strong></div></div>
+    <div class="card border-green"><div class="card-label">Acima da Meta</div><div class="card-val c-green">${nMeta}</div><div class="card-sub">prod ≥ ${meta}</div><div style="font-size:18px;font-weight:800;color:var(--green);margin-top:4px;letter-spacing:-0.5px;">${pctMeta}%</div></div>
+    <div class="card border-amber"><div class="card-label">Atenção</div><div class="card-val c-amber">${nAttn}</div><div class="card-sub">prod ${attnMin}–${meta-1}</div><div style="font-size:18px;font-weight:800;color:var(--amber);margin-top:4px;letter-spacing:-0.5px;">${pctAttn}%</div></div>
+    <div class="card border-red"><div class="card-label">Abaixo</div><div class="card-val c-red">${nBelow}</div><div class="card-sub">prod &lt; ${attnMin}</div><div style="font-size:18px;font-weight:800;color:var(--red);margin-top:4px;letter-spacing:-0.5px;">${pctBelow}%</div></div>
     <div class="card border-blue"><div class="card-label">Total Unidades</div><div class="card-val c-blue">${totalUni.toLocaleString('pt-BR')}</div><div class="card-sub">no turno</div></div>
     `;
 
